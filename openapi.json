@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.2",
   "info": {
-    "description": "This is a api documents for Smarp App",
+    "description": "# How to generate access-token\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mi augue, consequat eget pulvinar ut, aliquam id enim. Morbi luctus ullamcorper orci, at molestie ex ornare eget. Maecenas auctor elit vitae metus dignissim interdum. Proin cursus nunc ut urna laoreet, a facilisis purus sodales. Vestibulum id dui nec neque venenatis facilisis. Aenean eget semper justo. Sed et urna sed nulla tempor consequat. Ut placerat nunc sit amet magna ullamcorper, ut laoreet libero tempor. Nunc dapibus felis ac hendrerit aliquam.\n",
     "version": "1.0.0",
     "title": "OpenAPI Smarp",
     "license": {
@@ -42,7 +42,7 @@
         "operationId": "getPostList",
         "security": [
           {
-            "cookieAuth": []
+            "access-token": []
           }
         ],
         "parameters": [
@@ -1762,10 +1762,9 @@
       }
     },
     "securitySchemes": {
-      "cookieAuth": {
-        "type": "apiKey",
-        "in": "cookie",
-        "name": "connect.sid"
+      "access-token": {
+        "type": "http",
+        "scheme": "bearer"
       }
     }
   }
