@@ -27,23 +27,8 @@
   "tags": [
     {
       "name": "post",
-      "description": "Everything about Post"
-    },
-    {
-      "name": "channel",
-      "description": "Everything about Channel"
-    },
-    {
-      "name": "group",
-      "description": "Everything about Group"
-    },
-    {
-      "name": "onboarding",
-      "description": "Everything about onboarding"
-    },
-    {
-      "name": "comment",
-      "description": "Everything about comment"
+      "description": "Everything about Post",
+      "x-public": true
     }
   ],
   "paths": {
